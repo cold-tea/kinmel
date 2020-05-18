@@ -1,4 +1,9 @@
+D:\Java\Intellij\kinmel\src\main\java\com\sandesh\kinmel\services\UserDetailsServiceImpl.java
 D:\Java\Intellij\kinmel\src\main\java\com\sandesh\kinmel\controller\LoginController.java
 D:\Java\Intellij\kinmel\src\main\java\com\sandesh\kinmel\controller\BaseController.java
+D:\Java\Intellij\kinmel\src\main\java\com\sandesh\kinmel\model\Authority.java
+D:\Java\Intellij\kinmel\src\main\java\com\sandesh\kinmel\security\SecurityConfiguration.java
 D:\Java\Intellij\kinmel\src\main\java\com\sandesh\kinmel\ApplicationConfig.java
+D:\Java\Intellij\kinmel\src\main\java\com\sandesh\kinmel\model\UserDetailsImpl.java
+D:\Java\Intellij\kinmel\src\main\java\com\sandesh\kinmel\model\User.java
 D:\Java\Intellij\kinmel\src\main\java\com\sandesh\kinmel\KinmelApplication.java
