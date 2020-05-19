@@ -1,1 +1,8 @@
 /* your styles go here */
+.get-top-margin {
+    margin-top: 20px;
+}
+
+.get-left-margin {
+    margin-left: 10px;
+}

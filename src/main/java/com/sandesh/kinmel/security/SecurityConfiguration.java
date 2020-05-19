@@ -26,22 +26,13 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.authorizeRequests()
-                .antMatchers( "/css/**", "/vendor/**", "/scss/**", "/img/**", "/js/**").permitAll()
+                .antMatchers( "/css/**", "/vendor/**", "/scss/**", "/img/**", "/js/**", "/register", "/login/**").permitAll()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/**").hasAnyRole("USER", "ADMIN")
                 .and().formLogin().loginPage("/login").permitAll()
                 .failureUrl("/login?error")
                 .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/login?logout");
-
-        /*
-        http.authorizeRequests()
-                .anyRequest().permitAll().and()
-                .formLogin().loginPage("/register").permitAll()
-                .failureUrl("/register?error")
-                .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/register?logout");
         http.csrf().disable();
-         */
-        //<sec:csrfInput />
     }
 
     @Bean
@@ -50,33 +41,3 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 }
-
-
-
-
-
-
-/*
-    @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication()
-                .withUser("hello")
-                .password("hello")
-                .roles("USER")
-                .and()
-                .withUser("hi")
-                .password("hi")
-                .roles("ADMIN");
-    }
-*/
-
-/*
-    @Autowired
-    private DataSource dataSource;
-
-        @Override
-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.jdbcAuthentication()
-                .dataSource(dataSource);
-    }
-*/

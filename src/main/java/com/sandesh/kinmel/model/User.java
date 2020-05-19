@@ -1,5 +1,6 @@
 package com.sandesh.kinmel.model;
 
+import javax.validation.constraints.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
@@ -8,13 +9,23 @@ public class User implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @Size(min = 5 , max = 10, message = "{error.username.size}")
     private String username;
+    @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{3,}$",
+            message = "{error.password.pattern}")
     private String password;
     private char enabled;
+
+
+    @Pattern(regexp = "[a-zA-Z]{2,40}", message = "{error.only.alphabets}")
     private String firstName;
+    @Pattern(regexp = "[a-zA-Z]{2,40}", message = "{error.only.alphabets}")
     private String lastName;
+    @Email(message = "{error.email.format}")
     private String email;
+    @Size
     private String phone;
+    @Size(min = 10, max = 10, message = "{error.mobile.size}")
     private String mobile;
     private String address;
     private Date registerDate;

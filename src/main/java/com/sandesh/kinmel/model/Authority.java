@@ -6,16 +6,16 @@ public class Authority implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private int id;
     private String role;
     private User user;
 
-    public int getId() {
-        return id;
+    public Authority() {}
+    public Authority(String role) {
+        this.role = role;
     }
-
-    public void setId(int id) {
-        this.id = id;
+    public Authority(String role, User user) {
+        this (role);
+        this.user = user;
     }
 
     public String getRole() {
