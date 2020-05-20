@@ -19,7 +19,7 @@
   </head>
   <body>
     <!-- *** HEADER START ***-->
-
+    <jsp:include page="component/logo-only-header.jsp" />
     <!-- *** HEADER END ***-->
 
     <div id="all" class="get-top-margin">
@@ -45,6 +45,15 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                     <strong class="test"><spring:message code="success.register"/> </strong>
+                  </div>
+                </c:if>
+                <!-- If registration user exists -->
+                <c:if test="${param.regUserExists != null}">
+                  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <strong class="test"><spring:message code="error.register.username"/> </strong>
                   </div>
                 </c:if>
                 <!-- If registration failed -->

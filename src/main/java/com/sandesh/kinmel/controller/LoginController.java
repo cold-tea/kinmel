@@ -1,5 +1,6 @@
 package com.sandesh.kinmel.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.sandesh.kinmel.model.Status;
 import com.sandesh.kinmel.model.User;
 import com.sandesh.kinmel.services.UserService;
@@ -30,7 +31,7 @@ public class LoginController {
     }
 
     @PostMapping(value = "/register")
-    public String register(@Valid @ModelAttribute("newUser") User user, BindingResult bindingResult) {
+    public String register(@Valid @ModelAttribute("newUser") User user, BindingResult bindingResult) throws JsonProcessingException {
         BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
         if (bindingResult.hasErrors()) {
             bindingResult.getAllErrors().forEach(e -> System.out.println(e.toString()));
@@ -41,8 +42,13 @@ public class LoginController {
         ResponseEntity<Status> responseEntity = userService.saveUser(user);
         if (responseEntity.getStatusCode() == HttpStatus.OK) {
             return "redirect:/login?register";
+        } else if (responseEntity.getStatusCode() == HttpStatus.BAD_REQUEST) {
+            System.out.println("Some service error: " + Objects.requireNonNull(responseEntity.getBody()).getMessage());
+            return "redirect:/login?regUserExists";
+        } else {
+            System.out.println("Some service error: " + Objects.requireNonNull(responseEntity.getBody()).getExMessage());
+            return "redirect:/login?regfailed";
         }
-        System.out.println("Some service error: " + Objects.requireNonNull(responseEntity.getBody()).getExMessage());
-        return "redirect:/login?regFailed";
+
     }
 }

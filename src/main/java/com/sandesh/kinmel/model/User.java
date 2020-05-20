@@ -1,5 +1,7 @@
 package com.sandesh.kinmel.model;
 
+import com.sandesh.kinmel.annotation.UniqueUsername;
+
 import javax.validation.constraints.*;
 import java.io.Serializable;
 import java.util.Date;
@@ -10,6 +12,7 @@ public class User implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Size(min = 5 , max = 10, message = "{error.username.size}")
+    @UniqueUsername
     private String username;
     @Pattern(regexp = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{3,}$",
             message = "{error.password.pattern}")
