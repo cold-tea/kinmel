@@ -82,6 +82,7 @@
           <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.34" />
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-annotations-api:9.0.34" />
           <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-el:9.0.34" />
+          <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.9.5" />
         </element>
       </element>
       <element id="directory" name="META-INF">

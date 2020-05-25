@@ -5,21 +5,27 @@ import com.sandesh.kinmel.model.Status;
 import com.sandesh.kinmel.model.User;
 import com.sandesh.kinmel.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.Objects;
 
 @Controller
 public class LoginController {
+
+    @InitBinder
+    public void initBinder(WebDataBinder webDataBinder) {
+        StringTrimmerEditor stringTrimmerEditor = new StringTrimmerEditor(true);
+        webDataBinder.registerCustomEditor(String.class, stringTrimmerEditor);
+    }
 
     @Autowired
     private UserService userService;
@@ -43,12 +49,16 @@ public class LoginController {
         if (responseEntity.getStatusCode() == HttpStatus.OK) {
             return "redirect:/login?register";
         } else if (responseEntity.getStatusCode() == HttpStatus.BAD_REQUEST) {
-            System.out.println("Some service error: " + Objects.requireNonNull(responseEntity.getBody()).getMessage());
+            System.out.println("Some service error: " + Objects.requireNonNull(responseEntity.getBody()).getExMessage());
             return "redirect:/login?regUserExists";
         } else {
             System.out.println("Some service error: " + Objects.requireNonNull(responseEntity.getBody()).getExMessage());
             return "redirect:/login?regfailed";
         }
+    }
 
+    @GetMapping(value = "/profile")
+    public String showUserProfile() {
+        return "profile";
     }
 }

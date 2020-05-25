@@ -157,11 +157,21 @@
 
 
     <!-- *** COPYRIGHT START ***-->
-
+    <jsp:include page="component/copyright.jsp" />
     <!-- *** COPYRIGHT END ***-->
 
     <!-- *** JAVASCRIPT START ***-->
     <jsp:include page="component/js.jsp" />
     <!-- *** JAVASCRIPT END ***-->
+
+    <!-- *** CUSTOM JAVASCRIPT ***-->
+    <script type="text/javascript">
+      // auto removing alert after 3 sec
+      $(document).ready(function() {
+        setTimeout(function() {
+          $(".alert").alert('close');
+        }, 8000);
+      });
+    </script>
   </body>
 </html>

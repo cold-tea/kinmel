@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.css">
 <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
 <!-- theme stylesheet-->
-<link rel="stylesheet" href="css/style.blue.css" id="theme-stylesheet">
+<link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
 <!-- Custom stylesheet - for your changes-->
 <link rel="stylesheet" href="css/custom.css">
 <!-- Favicon-->

@@ -24,7 +24,15 @@
     <!-- *** HEADER END ***-->
 
     <!-- *** BODY START ***-->
+    <div id="all">
+        <div id="content">
+            <div class="container">
+                <div class="row">
 
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- *** BODY END ***-->
 
 

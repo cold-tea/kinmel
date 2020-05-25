@@ -30,11 +30,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="box">
-                            <h1>Error occurred</h1>
-                            <h3>Message</h3>
-                            <p class="lead">
-                                ${message}
-                            </p>
+                            <h1 class="display-4">Error</h1>
+                            <p class="lead">Some internal error occurred while performing this request. Please try again!!</p>
+                            <hr class="my-4">
+                            <p>${message}</p>
+                            <a class="btn btn-primary btn-lg" href="${pageContext.request.contextPath}/home" role="button">Home</a>
                         </div>
                     </div>
                 </div>

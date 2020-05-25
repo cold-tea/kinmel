@@ -1,11 +1,15 @@
 package com.sandesh.kinmel;
 
 import com.sandesh.kinmel.filter.RegisterFilter;
+import com.sandesh.kinmel.formatter.AuthorityStringToListFormatter;
+import com.sandesh.kinmel.interceptor.HomeInterceptor;
 import com.sandesh.kinmel.interceptor.RegisterInterceptor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.format.FormatterRegistry;
@@ -23,11 +27,18 @@ import javax.servlet.Filter;
 @EnableWebMvc
 @Configuration
 @ComponentScan(basePackages = "com.sandesh.kinmel")
+@EnableAspectJAutoProxy
 public class ApplicationConfig implements WebMvcConfigurer {
 
     private static final String[] CLASSPATH_RESOURCE_LOCATIONS = {
             "classpath:/META-INF/resources/", "classpath:/resources/",
             "classpath:/static/", "classpath:/public/" };
+    @Autowired
+    private HomeInterceptor homeInterceptor;
+
+    @Autowired
+    private RegisterInterceptor registerInterceptor;
+
 
     @Bean
     public RestTemplate getRestTemplate() { return new RestTemplate();}
@@ -43,13 +54,6 @@ public class ApplicationConfig implements WebMvcConfigurer {
         return viewResolver;
     }
 
-    @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        if (!registry.hasMappingForPattern("/**")) {
-            registry.addResourceHandler("/**").addResourceLocations(
-                    CLASSPATH_RESOURCE_LOCATIONS);
-        }
-    }
 
     @Bean
     public MessageSource messageSource() {
@@ -69,13 +73,22 @@ public class ApplicationConfig implements WebMvcConfigurer {
     }
 
     @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        if (!registry.hasMappingForPattern("/**")) {
+            registry.addResourceHandler("/**").addResourceLocations(
+                    CLASSPATH_RESOURCE_LOCATIONS);
+        }
+    }
+
+    @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new RegisterInterceptor()).addPathPatterns("/register");
+        registry.addInterceptor(registerInterceptor).addPathPatterns("/register");
+        registry.addInterceptor(homeInterceptor).addPathPatterns("/home", "/");
     }
 
     @Override
     public void addFormatters(FormatterRegistry registry) {
-
+        registry.addConverter(new AuthorityStringToListFormatter());
     }
 
     @Override

@@ -26,18 +26,17 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http.authorizeRequests()
-                .antMatchers( "/css/**", "/vendor/**", "/scss/**", "/img/**", "/js/**", "/register", "/login/**").permitAll()
+                .antMatchers( "/css/**", "/vendor/**", "/scss/**", "/img/**", "/js/**", "/register", "/login/**", "/error/**").permitAll()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/**").hasAnyRole("USER", "ADMIN")
                 .and().formLogin().loginPage("/login").permitAll()
-                .failureUrl("/login?error")
+                .defaultSuccessUrl("/home", true)
                 .and().logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/login?logout");
         http.csrf().disable();
     }
 
     @Bean
     public PasswordEncoder getPasswordEncoder() {
-        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder(12);
-        return new BCryptPasswordEncoder();
+        return new BCryptPasswordEncoder(12);
     }
 }

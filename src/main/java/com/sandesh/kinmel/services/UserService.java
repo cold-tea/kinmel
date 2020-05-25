@@ -20,6 +20,7 @@ public class UserService {
         return restTemplate.getForObject("http://localhost:8081/rest/users/count/" + username, Long.class);
     }
 
+    /*  This will also work, below one is used to utilize the feature of AOP
     public ResponseEntity<Status> saveUser(User user) throws JsonProcessingException {
         ResponseEntity<Status> responseEntity = null;
         try {
@@ -28,5 +29,21 @@ public class UserService {
             responseEntity = ResponseMapperUtil.mapExToResponse(ex.getStatusCode(), ex.getResponseBodyAsString());
         }
         return responseEntity;
+    }
+     */
+
+    public ResponseEntity<Status> saveUser(User user) {
+        return restTemplate.postForEntity("http://localhost:8081/rest/users/", user, Status.class);
+    }
+
+    public Long getUserCountByEmail(String email) {
+        return restTemplate.getForObject("http://localhost:8081/rest/users/countEmail/" + email, Long.class);
+    }
+
+    public User getUserByUsername(String username) {
+        ResponseEntity<User> usersResponse = restTemplate.getForEntity("http://localhost:8081/rest/users/" + username,
+                User.class);
+        User user = usersResponse.getBody();
+        return user;
     }
 }

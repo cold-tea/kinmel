@@ -1,18 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55ed099a-328a-4cfc-8533-eaa033408dbc" name="Default Changelist" comment="Registration module added in the site.">
+    <list default="true" id="55ed099a-328a-4cfc-8533-eaa033408dbc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/kinmel_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/kinmel_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kinmel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/kinmel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/KinmelApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/KinmelApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/annotation/UniqueUsername.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/annotation/UniqueUsername.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/controller/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/controller/BaseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/exception/GlobalExHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/exception/GlobalExHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/formatter/AuthorityStringToListFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/formatter/AuthorityStringToListFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/interceptor/RegisterInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/interceptor/RegisterInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/services/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/services/UserDetailsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/component/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/component/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/component/stylesheets.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/component/stylesheets.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/template.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/ApplicationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/KinmelApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/KinmelApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/controller/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/controller/BaseController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/model/Authority.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/model/Authority.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/formatter/AuthorityStringToListFormatter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/formatter/AuthorityStringToListFormatter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/interceptor/RegisterInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/interceptor/RegisterInterceptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/messages.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/security/SecurityConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/services/UserDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/services/UserDetailsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +149,9 @@
       <workItem from="1589439005848" duration="1232000" />
       <workItem from="1589780496680" duration="4783000" />
       <workItem from="1589792049705" duration="13806000" />
-      <workItem from="1589861988862" duration="33362000" />
+      <workItem from="1589861988862" duration="47747000" />
+      <workItem from="1590222366823" duration="10383000" />
+      <workItem from="1590381099235" duration="2324000" />
     </task>
     <task id="LOCAL-00001" summary="Working perfectly fine till rendering and security configuration.">
       <created>1589801015303</created>
@@ -151,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589894281051</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Registration module added in the site with little modification due to which it can perform field level validation with annotations.">
+      <created>1589952878040</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589952878041</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +191,8 @@
     <MESSAGE value="Working perfectly fine till the rendering of css." />
     <MESSAGE value="Working perfectly fine till rendering and security configuration." />
     <MESSAGE value="Registration module added in the site." />
-    <option name="LAST_COMMIT_MESSAGE" value="Registration module added in the site." />
+    <MESSAGE value="Registration module added in the site with little modification due to which it can perform field level validation with annotations." />
+    <option name="LAST_COMMIT_MESSAGE" value="Registration module added in the site with little modification due to which it can perform field level validation with annotations." />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589799344785">
@@ -172,57 +203,61 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1589951299173" />
+    <state x="441" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590224748960">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="441" y="338" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1590224748960" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589780844035">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1589780844035" />
-    <state x="393" y="9" key="CommitChangelistDialog2" timestamp="1589894277046">
+    <state x="393" y="9" key="CommitChangelistDialog2" timestamp="1589952876359">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="9" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589894277046" />
+    <state x="393" y="9" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1589952876359" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1589793656818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589793656818" />
-    <state width="1493" height="237" key="GridCell.Tab.0.bottom" timestamp="1589952745787">
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom" timestamp="1590401869325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="237" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589952745787" />
-    <state width="1493" height="237" key="GridCell.Tab.0.center" timestamp="1589952745787">
+    <state width="1493" height="147" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590401869325" />
+    <state width="1493" height="147" key="GridCell.Tab.0.center" timestamp="1590401869324">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="237" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589952745787" />
-    <state width="1493" height="237" key="GridCell.Tab.0.left" timestamp="1589952745787">
+    <state width="1493" height="147" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590401869324" />
+    <state width="1493" height="147" key="GridCell.Tab.0.left" timestamp="1590401869324">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="237" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589952745787" />
-    <state width="1493" height="237" key="GridCell.Tab.0.right" timestamp="1589952745787">
+    <state width="1493" height="147" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590401869324" />
+    <state width="1493" height="147" key="GridCell.Tab.0.right" timestamp="1590401869325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="237" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589952745787" />
-    <state width="1493" height="237" key="GridCell.Tab.1.bottom" timestamp="1589952745788">
+    <state width="1493" height="147" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590401869325" />
+    <state width="1493" height="147" key="GridCell.Tab.1.bottom" timestamp="1590401869325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="237" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589952745788" />
-    <state width="1493" height="237" key="GridCell.Tab.1.center" timestamp="1589952745787">
+    <state width="1493" height="147" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590401869325" />
+    <state width="1493" height="147" key="GridCell.Tab.1.center" timestamp="1590401869325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="237" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1589952745787" />
-    <state width="1493" height="237" key="GridCell.Tab.1.left" timestamp="1589952745787">
+    <state width="1493" height="147" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590401869325" />
+    <state width="1493" height="147" key="GridCell.Tab.1.left" timestamp="1590401869325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="237" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1589952745787" />
-    <state width="1493" height="237" key="GridCell.Tab.1.right" timestamp="1589952745788">
+    <state width="1493" height="147" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590401869325" />
+    <state width="1493" height="147" key="GridCell.Tab.1.right" timestamp="1590401869325">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="237" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1589952745788" />
+    <state width="1493" height="147" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590401869325" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1589804607321">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="55" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589804607321" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1589801032494">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1589952884927">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589801032494" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1589952884927" />
   </component>
 </project>
