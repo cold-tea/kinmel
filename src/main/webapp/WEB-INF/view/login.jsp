@@ -143,6 +143,7 @@
                   <div class="text-center">
                     <button type="submit" class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
                   </div>
+                  <sec:csrfInput/>
                 </form>
               </div>
             </div>

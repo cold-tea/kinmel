@@ -1,6 +1,6 @@
 package com.sandesh.kinmel.annotation;
 
-import com.sandesh.kinmel.services.UserService;
+import com.sandesh.kinmel.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.validation.ConstraintValidator;

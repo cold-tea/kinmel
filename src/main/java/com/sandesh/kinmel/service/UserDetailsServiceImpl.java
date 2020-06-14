@@ -1,4 +1,4 @@
-package com.sandesh.kinmel.services;
+package com.sandesh.kinmel.service;
 
 import com.sandesh.kinmel.model.User;
 import com.sandesh.kinmel.model.UserDetailsImpl;

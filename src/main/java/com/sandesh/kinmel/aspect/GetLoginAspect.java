@@ -17,7 +17,7 @@ public class GetLoginAspect {
 
     private static final Logger logger = LoggerFactory.getLogger(GetLoginAspect.class);
 
-    @Around(value = "execution(* com.sandesh.kinmel.services.*.saveUser(..))")
+    @Around(value = "execution(* com.sandesh.kinmel.service.*.saveUser(..))")
     public ResponseEntity<Status> responseMapperForService(ProceedingJoinPoint joinPoint) throws Throwable {
         ResponseEntity<Status> responseEntity = null;
         logger.error("Around AOP for services");

@@ -31,6 +31,9 @@
                     <div class="col-lg-3">
                         <jsp:include page="component/categories-sidebar.jsp" />
                     </div>
+                    <div class="col-lg-9">
+                        <jsp:include page="component/categories-body.jsp" />
+                    </div>
                 </div>
             </div>
         </div>

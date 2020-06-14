@@ -1,7 +1,7 @@
 package com.sandesh.kinmel.interceptor;
 
 import com.sandesh.kinmel.model.User;
-import com.sandesh.kinmel.services.UserService;
+import com.sandesh.kinmel.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -18,11 +18,16 @@ public class HomeInterceptor extends HandlerInterceptorAdapter {
     @Autowired
     private UserService userService;
 
-    @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+    private void createSession(HttpServletRequest request) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         User user = userService.getUserByUsername(authentication.getName());
         request.getSession().setAttribute("loggedUser", user);
+    }
+
+    @Override
+    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
+        // Create session holding the user info
+        createSession(request);
         return true;
     }
 

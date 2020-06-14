@@ -3,7 +3,7 @@ package com.sandesh.kinmel.controller;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.sandesh.kinmel.model.Status;
 import com.sandesh.kinmel.model.User;
-import com.sandesh.kinmel.services.UserService;
+import com.sandesh.kinmel.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.http.HttpStatus;
