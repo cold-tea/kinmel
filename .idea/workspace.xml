@@ -3,31 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="55ed099a-328a-4cfc-8533-eaa033408dbc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/annotation/UniqueEmailValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/annotation/UniqueEmailValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/annotation/UniqueUsernameValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/annotation/UniqueUsernameValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/aspect/GetLoginAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/aspect/GetLoginAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/controller/AttributeAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/controller/AttributeAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/interceptor/HomeInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/interceptor/HomeInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/services/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/component/categories-sidebar.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/component/categories-sidebar.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/component/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/component/header.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/component/js.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/component/js.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/template.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/template.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/annotation/UniqueEmailValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/annotation/UniqueEmailValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/annotation/UniqueUsernameValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/annotation/UniqueUsernameValidator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/aspect/GetLoginAspect.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/aspect/GetLoginAspect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/controller/AttributeAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/controller/AttributeAdvice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/interceptor/HomeInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/interceptor/HomeInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/security/SecurityConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/security/SecurityConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/services/UserDetailsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sandesh/kinmel/services/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/messages.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +73,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/sandesh/kinmel/model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -148,6 +123,7 @@
       <workItem from="1589861988862" duration="47747000" />
       <workItem from="1590222366823" duration="10383000" />
       <workItem from="1590381099235" duration="33684000" />
+      <workItem from="1592719426908" duration="713000" />
     </task>
     <task id="LOCAL-00001" summary="Working perfectly fine till rendering and security configuration.">
       <created>1589801015303</created>
